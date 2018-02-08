@@ -1,0 +1,28 @@
+{
+  "name": "nodemicro",
+  "version": "0.1.0",
+  "description": "a single/multi process nodjs micoservice",
+  "main": "",
+  "scripts": {
+    "dev": "node startup"
+  },
+  "author": "chartera",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "amqplib": "0.4.x",
+    "async": "^2.0.0-rc.6",
+    "dotenv": "2.x.x",
+    "ioredis": "^2.0.1",
+    "joi": "6.4.x",
+    "jsonfile": "^2.3.1",
+    "jsonwebtoken": "^7.1.9",
+    "log4js": "^0.6.38",
+    "shelljs": "^0.7.4",
+    "shortid": "^2.2.8",
+    "socketcluster": "7.1.1",
+    "watchr": "^3.0.1",
+    "zmq": "2.x.x"
+  }
+}

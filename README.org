@@ -1,0 +1,94 @@
+#+TITLE:     regserv
+#+AUTHOR:    Nael Tasmim
+#+EMAIL:     nael@hotmail.de
+#+DATE:      08.02.2018
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude
+#+STARTUP:    showall
+
+
+ | Status:   | Under Development                 |
+ | Location: | [[http://github.com/chartera/nodemicro]] |
+ | Version:  | 0.1.1
+
+* Description
+
+regserv is a nodejs single/multi process microservice for
+account management.
+
+* Dependencies
+
+** Databases
+
+Configuration under *.env*.
+
+- redis
+- postgresql
+- couchdb
+
+** Dynamic libraries
+
+- zmq
+
+* Install and running
+
+For mutli process usage set *singleMode = false* in *.env*.
+(See under the benchmark folder some benchmarks).
+
+#+BEGIN_SRC shell
+$ cd regserv
+$ npm install
+# install all dependencies in subfolders
+$ npm run dev
+# run
+# npm run dev
+#+END_SRC
+
+Reloading for changes is active.
+(see startup.js).
+
+* Apis
+
+** Registration 
+
+The registraion process starting  with an json post request.
+By successful request the return value is a unique code, which
+is needed for a validation request. The validation request is only
+one time valid, if successful, the return value is a token. This
+token is needen to set a password in order to complete
+the registration.
+
+#+BEGIN_SRC shell
+$ curl -H "Content-Type: application/json" -X POST -d '{"email":"test@example.com"}' http://localhost:4445/api/v1/registration
+$ curl http://localhost:4445/api/v1/invitation_token/<codoe>
+#+END_SRC
+
+
+* Todos
+
+** technical 
+
+- zmq as static library.
+- sqlite instead postgresql.
+- pouchdb-server instead couchdb.
+- code cleaning
+
+** features
+
+- complete registraion 
+- email confirmation request
+- session login/logout
+- client part for include in a spa
+- startup.js without reloding in production
+- nodedaemon
+- ...
+
+* Bugs
+
+- ipc channels stucks sometimes in mutli process mode
+- ...
+

@@ -1,0 +1,19 @@
+{
+  "name": "Authentication",
+  "description": "",
+  "version": "0.0.1",
+  "main": "",
+  "scripts": {
+    "dev": "node startup"
+  },
+  "dependencies": {
+    "ioredis": "^2.5.0",
+    "jsonwebtoken": "^7.1.9",
+    "log4js": "^0.6.36",
+    "pg": "6.x.x",
+    "sequelize": "^3.23.3",
+    "shortid": "^2.2.6",
+    "zmq": "2.x.x"
+  },
+  "devDependencies": {}
+}

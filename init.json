@@ -1,0 +1,9 @@
+{
+  "microservice": [
+    "Context/main.js",
+    "Orchestrator/main.js",
+    "Hapi/main.js",
+    "Authorization/main.js",
+    "Authentication/main.js"
+  ]
+}

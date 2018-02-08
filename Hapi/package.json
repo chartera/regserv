@@ -1,0 +1,24 @@
+{
+  "name": "Webserver",
+  "description": "",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "^2.1.2",
+    "crispy-string": "0.0.2",
+    "good": "^7.0.2",
+    "good-console": "^6.1.2",
+    "good-file": "^6.0.1",
+    "good-squeeze": "^4.0.0",
+    "jsonwebtoken": "^7.1.9",
+    "h2o2": "^5.4.0",
+    "hapi": "^15.0.3",
+    "inert": "^4.0.2",
+    "ioredis": "^2.3.0",
+    "lodash": "^4.15.0",
+    "log4js": "^0.6.38",
+    "zmq": "^2.15.3",
+    "joi": "10.x.x",
+    "boom": "^4.2.0"
+  },
+  "devDependencies": {}
+}

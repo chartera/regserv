@@ -1,0 +1,13 @@
+{
+  "name": "Name der Veranstaltung",
+  "description": "Beschreib die Veranstaltung",
+  "context": "Welche {context} betrifft es",
+  "save": "Speichern",
+  "cancel": "Verwerfen",
+  "year": "Jahr",
+  "month": "Monat",
+  "day": "Tag",
+  "hour": "Uhrzeit"
+
+
+}

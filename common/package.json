@@ -1,0 +1,20 @@
+{
+  "name": "Common",
+  "description": "",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "2.x.x",
+    "dotenv": "^5.0.0",
+    "ioredis": "2.2.0",
+    "joi": "^10.2.2",
+    "jsonwebtoken": "^7.3.0",
+    "lodash": "^4.16.1",
+    "log4js": "^0.6.36",
+    "request": "^2.81.0",
+    "sequelize": "^3.23.3",
+    "shelljs": "^0.7.4",
+    "shortid": "^2.2.6",
+    "zmq": "2.x.x"
+  },
+  "devDependencies": {}
+}
