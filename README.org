@@ -70,6 +70,10 @@ $ curl http://localhost:4445/api/v1/invitation_token/<codoe>
 
 * Todos
 
+** architecture
+
+- circuit breaker pattern
+
 ** technical 
 
 - zmq as static library.
