@@ -44,12 +44,11 @@ $ cd regserv
 $ npm install
 # install all dependencies in subfolders
 $ npm run dev
-# run
-# npm run dev
 #+END_SRC
 
-Reloading for changes is active.
-(see startup.js).
+** Supervisor
+
+ A supervisor-like wrapper on startup.js for reloading in dev mode.
 
 * Apis
 
